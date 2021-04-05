@@ -1,0 +1,676 @@
+2021-03-12 11:32:03,510 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-03-12 11:32:03,663 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting HospitalManagementApplication using Java 1.8.0_221 on LIN51004636 with PID 8452 (C:\project data\hospital mgmt\HospitalManagement\target\classes started by vpatil39 in C:\project data\hospital mgmt\HospitalManagement)
+2021-03-12 11:32:03,665 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 11:32:04,050 INFO org.springframework.boot.logging.DeferredLog [restartedMain] The Class-Path manifest attribute in C:\Users\vpatil39\.m2\repository\com\oracle\database\jdbc\ojdbc8\19.8.0.0\ojdbc8-19.8.0.0.jar referenced one or more files that do not exist: file:/C:/Users/vpatil39/.m2/repository/com/oracle/database/jdbc/ojdbc8/19.8.0.0/oraclepki.jar
+2021-03-12 11:32:04,051 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-12 11:32:04,052 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-12 11:32:07,559 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-12 11:32:07,933 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 353 ms. Found 8 JPA repository interfaces.
+2021-03-12 11:32:12,288 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-12 11:32:12,315 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-12 11:32:12,316 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 11:32:12,317 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 11:32:12,854 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 11:32:12,855 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 8801 ms
+2021-03-12 11:32:13,205 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-03-12 11:32:13,667 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-03-12 11:32:13,681 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-12 11:32:14,128 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-12 11:32:14,297 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-12 11:32:14,728 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-12 11:32:15,091 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-12 11:32:17,726 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-12 11:32:17,979 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 11:32:18,023 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 11:32:20,628 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-12 11:32:21,306 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 11:32:22,122 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-12 11:32:22,233 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-12 11:32:24,194 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started HospitalManagementApplication in 21.833 seconds (JVM running for 24.387)
+2021-03-12 11:33:39,059 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-9] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-12 11:33:39,060 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-9] Initializing Servlet 'dispatcherServlet'
+2021-03-12 11:33:39,081 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-9] Completed initialization in 20 ms
+2021-03-12 11:34:13,260 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-9] Method invoked class com.cg.hospital.serviceImpl.UserServiceImpl : saveUser()arguments : [{"user_id":0,"username":"Rohit","password":"password","enabled":true,"role":"PATIENT"}]
+2021-03-12 11:34:13,527 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-9] class com.cg.hospital.serviceImpl.UserServiceImpl : saveUser()Response : {"user_id":1,"username":"Rohit","password":"password","enabled":true,"role":"PATIENT"}
+2021-03-12 11:34:13,532 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-9] Method invoked class com.cg.hospital.serviceImpl.PatientServiceImpl : addPatient()arguments : [{"ssn":2,"address":"Mumbai","insuranceID":101,"name":"Rohit","phone":9087654321,"appointments":null,"prescribes":null,"stays":null,"undergoes":null,"user":{"user_id":1,"username":"Rohit","password":"password","enabled":true,"role":"PATIENT"}}]
+2021-03-12 11:34:13,588 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-9] Resolved [com.cg.hospital.exceptions.InvalidPatientException: Patient Already Exists]
+2021-03-12 11:35:01,159 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-1] Method invoked class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()arguments : [1]
+2021-03-12 11:35:01,220 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-1] class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()Response : {"present":true}
+2021-03-12 11:35:01,221 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-1] Method invoked class com.cg.hospital.serviceImpl.PatientServiceImpl : getPatientBySsn()arguments : [1]
+2021-03-12 11:35:01,319 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-1] class com.cg.hospital.serviceImpl.PatientServiceImpl : getPatientBySsn()Response : {"ssn":2,"address":"Mumbai","insuranceID":101,"name":"Rohit","phone":9087654321,"appointments":[],"prescribes":[],"stays":[],"undergoes":[],"user":{"user_id":1,"username":"Rohit","password":"password","enabled":true,"role":"PATIENT"}}
+2021-03-12 11:35:31,729 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-5] Method invoked class com.cg.hospital.serviceImpl.PatientServiceImpl : getAllPatients()arguments : []
+2021-03-12 11:35:31,802 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-5] Resolved [java.lang.reflect.UndeclaredThrowableException]
+2021-03-12 11:39:57,113 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-6] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 11:39:57,123 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-6] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 11:39:57,344 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-6] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-03-12 11:39:57,345 INFO com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown initiated...
+2021-03-12 11:39:57,353 INFO com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown completed.
+2021-03-12 11:39:58,166 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting HospitalManagementApplication using Java 1.8.0_221 on LIN51004636 with PID 8452 (C:\project data\hospital mgmt\HospitalManagement\target\classes started by vpatil39 in C:\project data\hospital mgmt\HospitalManagement)
+2021-03-12 11:39:58,170 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 11:40:00,733 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-12 11:40:00,987 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 252 ms. Found 8 JPA repository interfaces.
+2021-03-12 11:40:02,713 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-12 11:40:02,718 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-12 11:40:02,720 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 11:40:02,721 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 11:40:03,393 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 11:40:03,393 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 5188 ms
+2021-03-12 11:40:03,426 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2021-03-12 11:40:03,437 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2021-03-12 11:40:03,438 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-12 11:40:03,587 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-12 11:40:03,612 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-12 11:40:04,357 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-12 11:40:04,379 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 11:40:04,387 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 11:40:04,941 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-12 11:40:05,110 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 11:40:05,391 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-12 11:40:05,411 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-12 11:40:06,873 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started HospitalManagementApplication in 9.027 seconds (JVM running for 487.059)
+2021-03-12 11:40:06,878 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-12 11:40:08,154 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-10] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 11:40:08,159 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-10] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 11:40:08,370 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-10] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-03-12 11:40:08,372 INFO com.zaxxer.hikari.HikariDataSource [Thread-10] HikariPool-2 - Shutdown initiated...
+2021-03-12 11:40:08,378 INFO com.zaxxer.hikari.HikariDataSource [Thread-10] HikariPool-2 - Shutdown completed.
+2021-03-12 11:40:08,806 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting HospitalManagementApplication using Java 1.8.0_221 on LIN51004636 with PID 8452 (C:\project data\hospital mgmt\HospitalManagement\target\classes started by vpatil39 in C:\project data\hospital mgmt\HospitalManagement)
+2021-03-12 11:40:08,809 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 11:40:10,455 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-12 11:40:10,652 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 194 ms. Found 8 JPA repository interfaces.
+2021-03-12 11:40:10,944 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-12 11:40:10,947 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-12 11:40:10,948 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 11:40:10,950 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 11:40:11,050 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 11:40:11,051 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2236 ms
+2021-03-12 11:40:11,079 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2021-03-12 11:40:11,084 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2021-03-12 11:40:11,085 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-12 11:40:11,222 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-12 11:40:11,242 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-12 11:40:11,864 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-12 11:40:11,887 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 11:40:11,911 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 11:40:12,468 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-12 11:40:12,646 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 11:40:12,996 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-12 11:40:13,027 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-12 11:40:14,057 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started HospitalManagementApplication in 5.4 seconds (JVM running for 494.242)
+2021-03-12 11:40:14,060 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-12 11:40:24,467 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-12 11:40:24,472 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-03-12 11:40:24,473 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-03-12 11:40:24,630 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-1] Method invoked class com.cg.hospital.serviceImpl.UserServiceImpl : saveUser()arguments : [{"user_id":0,"username":"Rohit","password":"password","enabled":true,"role":"PATIENT"}]
+2021-03-12 11:40:24,679 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-1] class com.cg.hospital.serviceImpl.UserServiceImpl : saveUser()Response : {"user_id":1,"username":"Rohit","password":"password","enabled":true,"role":"PATIENT"}
+2021-03-12 11:40:24,682 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-1] Method invoked class com.cg.hospital.serviceImpl.PatientServiceImpl : addPatient()arguments : [{"ssn":2,"address":"Mumbai","insuranceID":101,"name":"Rohit","phone":9087654321,"appointments":null,"prescribes":null,"stays":null,"undergoes":null,"user":{"user_id":1,"username":"Rohit","password":"password","enabled":true,"role":"PATIENT"}}]
+2021-03-12 11:40:24,743 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [com.cg.hospital.exceptions.InvalidPatientException: Patient Already Exists]
+2021-03-12 11:40:46,232 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-2] Method invoked class com.cg.hospital.serviceImpl.UserServiceImpl : saveUser()arguments : [{"user_id":0,"username":"Rohit1","password":"password","enabled":true,"role":"PATIENT"}]
+2021-03-12 11:40:46,246 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] SQL Error: 23505, SQLState: 23505
+2021-03-12 11:40:46,247 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] Unique index or primary key violation: "PUBLIC.UK_9GXE97J2NGJJVTKIG6B6JVY91_INDEX_F ON PUBLIC.PATIENT(PHONE) VALUES 2"; SQL statement:
+insert into patient (address, insuranceid, name, phone, pcp, user_id, ssn) values (?, ?, ?, ?, ?, ?, ?) [23505-200]
+2021-03-12 11:40:46,298 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_9GXE97J2NGJJVTKIG6B6JVY91_INDEX_F ON PUBLIC.PATIENT(PHONE) VALUES 2"; SQL statement:
+insert into patient (address, insuranceid, name, phone, pcp, user_id, ssn) values (?, ?, ?, ?, ?, ?, ?) [23505-200]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2021-03-12 11:41:36,817 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-7] Method invoked class com.cg.hospital.serviceImpl.PatientServiceImpl : getAllPatients()arguments : []
+2021-03-12 11:41:36,875 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-7] Resolved [java.lang.reflect.UndeclaredThrowableException]
+2021-03-12 11:44:35,728 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-15] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 11:44:35,733 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-15] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 11:44:35,947 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-15] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-03-12 11:44:35,948 INFO com.zaxxer.hikari.HikariDataSource [Thread-15] HikariPool-3 - Shutdown initiated...
+2021-03-12 11:44:35,953 INFO com.zaxxer.hikari.HikariDataSource [Thread-15] HikariPool-3 - Shutdown completed.
+2021-03-12 11:44:36,581 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting HospitalManagementApplication using Java 1.8.0_221 on LIN51004636 with PID 8452 (C:\project data\hospital mgmt\HospitalManagement\target\classes started by vpatil39 in C:\project data\hospital mgmt\HospitalManagement)
+2021-03-12 11:44:36,584 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 11:44:39,625 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-12 11:44:39,961 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 335 ms. Found 8 JPA repository interfaces.
+2021-03-12 11:44:42,461 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-12 11:44:42,463 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-12 11:44:42,464 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 11:44:42,464 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 11:44:43,339 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 11:44:43,340 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 6737 ms
+2021-03-12 11:44:43,377 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Starting...
+2021-03-12 11:44:43,387 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Start completed.
+2021-03-12 11:44:43,389 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-12 11:44:43,601 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-12 11:44:43,640 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-12 11:44:44,707 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-12 11:44:44,739 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 11:44:44,748 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 11:44:45,589 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-12 11:44:45,936 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 11:44:46,421 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-12 11:44:46,451 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-12 11:44:49,299 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started HospitalManagementApplication in 12.869 seconds (JVM running for 769.481)
+2021-03-12 11:44:49,308 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-12 11:46:22,430 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-12 11:46:22,434 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-03-12 11:46:22,437 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2021-03-12 11:46:22,650 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-1] Method invoked class com.cg.hospital.serviceImpl.UserServiceImpl : saveUser()arguments : [{"user_id":0,"username":"Rohit1","password":"password","enabled":true,"role":"PATIENT"}]
+2021-03-12 11:46:22,808 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-1] class com.cg.hospital.serviceImpl.UserServiceImpl : saveUser()Response : {"user_id":1,"username":"Rohit1","password":"password","enabled":true,"role":"PATIENT"}
+2021-03-12 11:46:22,818 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-1] Method invoked class com.cg.hospital.serviceImpl.PatientServiceImpl : addPatient()arguments : [{"ssn":2,"address":"Mumbai","insuranceID":101,"name":"Rohit","phone":9087654321,"appointments":null,"prescribes":null,"stays":null,"undergoes":null,"user":{"user_id":1,"username":"Rohit1","password":"password","enabled":true,"role":"PATIENT"}}]
+2021-03-12 11:46:22,840 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [com.cg.hospital.exceptions.InvalidPatientException: Patient Already Exists]
+2021-03-12 11:46:43,380 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-2] Method invoked class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()arguments : [1]
+2021-03-12 11:46:43,388 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-2] class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()Response : {"present":true}
+2021-03-12 11:46:43,389 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-2] Method invoked class com.cg.hospital.serviceImpl.PatientServiceImpl : getPatientBySsn()arguments : [1]
+2021-03-12 11:46:43,403 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-2] class com.cg.hospital.serviceImpl.PatientServiceImpl : getPatientBySsn()Response : {"ssn":2,"address":"Mumbai","insuranceID":101,"name":"Rohit","phone":9087654321,"appointments":[],"prescribes":[],"stays":[],"undergoes":[],"user":{"user_id":1,"username":"Rohit1","password":"password","enabled":true,"role":"PATIENT"}}
+2021-03-12 11:46:52,608 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-4] Method invoked class com.cg.hospital.serviceImpl.PatientServiceImpl : getAllPatients()arguments : []
+2021-03-12 11:46:52,626 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-4] class com.cg.hospital.serviceImpl.PatientServiceImpl : getAllPatients()Response : [{"ssn":2,"address":"Mumbai","insuranceID":101,"name":"Rohit","phone":9087654321,"appointments":[],"prescribes":[],"stays":[],"undergoes":[],"user":{"user_id":1,"username":"Rohit1","password":"password","enabled":true,"role":"PATIENT"}}]
+2021-03-12 11:51:45,536 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-6] Method invoked class com.cg.hospital.serviceImpl.PatientServiceImpl : removePatient()arguments : [1]
+2021-03-12 11:51:45,553 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-6] Resolved [com.cg.hospital.exceptions.PatientNotFoundException: Patient not found for SSN: 1]
+2021-03-12 11:52:03,615 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-8] Method invoked class com.cg.hospital.serviceImpl.PatientServiceImpl : removePatient()arguments : [2]
+2021-03-12 11:52:03,687 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-8] class com.cg.hospital.serviceImpl.PatientServiceImpl : removePatient()Response : "Patient's record deleted successfully"
+2021-03-12 11:52:46,878 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-20] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 11:52:46,884 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-20] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 11:52:47,100 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-20] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-03-12 11:52:47,101 INFO com.zaxxer.hikari.HikariDataSource [Thread-20] HikariPool-4 - Shutdown initiated...
+2021-03-12 11:52:47,108 INFO com.zaxxer.hikari.HikariDataSource [Thread-20] HikariPool-4 - Shutdown completed.
+2021-03-12 11:52:47,890 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting HospitalManagementApplication using Java 1.8.0_221 on LIN51004636 with PID 8452 (C:\project data\hospital mgmt\HospitalManagement\target\classes started by vpatil39 in C:\project data\hospital mgmt\HospitalManagement)
+2021-03-12 11:52:47,890 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 11:52:49,282 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-12 11:52:49,478 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 194 ms. Found 8 JPA repository interfaces.
+2021-03-12 11:52:50,725 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-12 11:52:50,726 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-12 11:52:50,727 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 11:52:50,728 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 11:52:51,373 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 11:52:51,374 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3479 ms
+2021-03-12 11:52:51,418 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-5 - Starting...
+2021-03-12 11:52:51,435 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-5 - Start completed.
+2021-03-12 11:52:51,437 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-12 11:52:51,607 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-12 11:52:51,624 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-12 11:52:52,286 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-12 11:52:52,308 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 11:52:52,319 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 11:52:53,391 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-12 11:52:53,665 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 11:52:54,016 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-12 11:52:54,054 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-12 11:52:55,207 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started HospitalManagementApplication in 7.476 seconds (JVM running for 1255.379)
+2021-03-12 11:52:55,210 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-12 11:53:14,161 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-25] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 11:53:14,167 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-25] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 11:53:14,374 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-25] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-03-12 11:53:14,375 INFO com.zaxxer.hikari.HikariDataSource [Thread-25] HikariPool-5 - Shutdown initiated...
+2021-03-12 11:53:14,380 INFO com.zaxxer.hikari.HikariDataSource [Thread-25] HikariPool-5 - Shutdown completed.
+2021-03-12 11:53:14,983 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting HospitalManagementApplication using Java 1.8.0_221 on LIN51004636 with PID 8452 (C:\project data\hospital mgmt\HospitalManagement\target\classes started by vpatil39 in C:\project data\hospital mgmt\HospitalManagement)
+2021-03-12 11:53:14,984 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 11:53:16,149 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-12 11:53:16,261 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 111 ms. Found 8 JPA repository interfaces.
+2021-03-12 11:53:16,492 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-12 11:53:16,494 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-12 11:53:16,495 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 11:53:16,495 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 11:53:16,647 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 11:53:16,647 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1658 ms
+2021-03-12 11:53:16,683 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-6 - Starting...
+2021-03-12 11:53:16,692 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-6 - Start completed.
+2021-03-12 11:53:16,693 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-12 11:53:16,812 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-12 11:53:16,853 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-12 11:53:17,447 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-12 11:53:17,464 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 11:53:17,469 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 11:53:18,598 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-12 11:53:18,910 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 11:53:19,224 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-12 11:53:19,249 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-12 11:53:20,538 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started HospitalManagementApplication in 5.663 seconds (JVM running for 1280.71)
+2021-03-12 11:53:20,545 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-12 11:53:23,677 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-12 11:53:23,681 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-03-12 11:53:23,684 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-03-12 11:53:23,779 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-1] Method invoked class com.cg.hospital.serviceImpl.UserServiceImpl : saveUser()arguments : [{"user_id":0,"username":"Rohit1","password":"password","enabled":true,"role":"PATIENT"}]
+2021-03-12 11:53:23,830 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-1] class com.cg.hospital.serviceImpl.UserServiceImpl : saveUser()Response : {"user_id":1,"username":"Rohit1","password":"password","enabled":true,"role":"PATIENT"}
+2021-03-12 11:53:23,835 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-1] Method invoked class com.cg.hospital.serviceImpl.PatientServiceImpl : addPatient()arguments : [{"ssn":2,"address":"Mumbai","insuranceID":101,"name":"Rohit","phone":9087654321,"appointments":null,"prescribes":null,"stays":null,"undergoes":null,"user":{"user_id":1,"username":"Rohit1","password":"password","enabled":true,"role":"PATIENT"}}]
+2021-03-12 11:53:23,885 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [com.cg.hospital.exceptions.InvalidPatientException: Patient Already Exists]
+2021-03-12 11:53:25,614 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-2] Method invoked class com.cg.hospital.serviceImpl.UserServiceImpl : saveUser()arguments : [{"user_id":0,"username":"Rohit1","password":"password","enabled":true,"role":"PATIENT"}]
+2021-03-12 11:53:25,619 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] SQL Error: 23505, SQLState: 23505
+2021-03-12 11:53:25,620 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] Unique index or primary key violation: "PUBLIC.UK_9GXE97J2NGJJVTKIG6B6JVY91_INDEX_F ON PUBLIC.PATIENT(PHONE) VALUES 2"; SQL statement:
+insert into patient (address, insuranceid, name, phone, pcp, user_id, ssn) values (?, ?, ?, ?, ?, ?, ?) [23505-200]
+2021-03-12 11:53:25,627 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_9GXE97J2NGJJVTKIG6B6JVY91_INDEX_F ON PUBLIC.PATIENT(PHONE) VALUES 2"; SQL statement:
+insert into patient (address, insuranceid, name, phone, pcp, user_id, ssn) values (?, ?, ?, ?, ?, ?, ?) [23505-200]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2021-03-12 11:54:16,876 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-30] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 11:54:16,877 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-30] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 11:54:17,085 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-30] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-03-12 11:54:17,086 INFO com.zaxxer.hikari.HikariDataSource [Thread-30] HikariPool-6 - Shutdown initiated...
+2021-03-12 11:54:17,089 INFO com.zaxxer.hikari.HikariDataSource [Thread-30] HikariPool-6 - Shutdown completed.
+2021-03-12 11:54:17,549 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting HospitalManagementApplication using Java 1.8.0_221 on LIN51004636 with PID 8452 (C:\project data\hospital mgmt\HospitalManagement\target\classes started by vpatil39 in C:\project data\hospital mgmt\HospitalManagement)
+2021-03-12 11:54:17,550 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 11:54:18,671 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-12 11:54:18,823 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 151 ms. Found 8 JPA repository interfaces.
+2021-03-12 11:54:19,815 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-12 11:54:19,816 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-12 11:54:19,817 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 11:54:19,817 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 11:54:20,412 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 11:54:20,414 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2861 ms
+2021-03-12 11:54:20,449 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-7 - Starting...
+2021-03-12 11:54:20,452 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-7 - Start completed.
+2021-03-12 11:54:20,453 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-12 11:54:20,538 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-12 11:54:20,556 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-12 11:54:21,115 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-12 11:54:21,147 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 11:54:21,164 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 11:54:21,749 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-12 11:54:21,937 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 11:54:22,119 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-12 11:54:22,136 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-12 11:54:22,775 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started HospitalManagementApplication in 5.328 seconds (JVM running for 1342.946)
+2021-03-12 11:54:22,782 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-12 12:00:26,454 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-35] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 12:00:26,456 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-35] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 12:00:26,672 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-35] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-03-12 12:00:26,673 INFO com.zaxxer.hikari.HikariDataSource [Thread-35] HikariPool-7 - Shutdown initiated...
+2021-03-12 12:00:26,677 INFO com.zaxxer.hikari.HikariDataSource [Thread-35] HikariPool-7 - Shutdown completed.
+2021-03-12 12:00:27,126 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting HospitalManagementApplication using Java 1.8.0_221 on LIN51004636 with PID 8452 (C:\project data\hospital mgmt\HospitalManagement\target\classes started by vpatil39 in C:\project data\hospital mgmt\HospitalManagement)
+2021-03-12 12:00:27,127 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 12:00:28,291 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-12 12:00:28,433 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 141 ms. Found 8 JPA repository interfaces.
+2021-03-12 12:00:29,905 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-12 12:00:29,909 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-12 12:00:29,910 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 12:00:29,910 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 12:00:30,630 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 12:00:30,630 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3499 ms
+2021-03-12 12:00:30,653 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-8 - Starting...
+2021-03-12 12:00:30,656 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-8 - Start completed.
+2021-03-12 12:00:30,656 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-12 12:00:30,857 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-12 12:00:30,889 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-12 12:00:31,492 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-12 12:00:31,516 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 12:00:31,530 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 12:00:32,067 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-12 12:00:32,215 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 12:00:32,431 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-12 12:00:32,445 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-12 12:00:33,052 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started HospitalManagementApplication in 6.039 seconds (JVM running for 1713.221)
+2021-03-12 12:00:33,056 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-12 12:00:36,051 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-12 12:00:36,053 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-03-12 12:00:36,056 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2021-03-12 12:00:36,100 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-1] Method invoked class com.cg.hospital.serviceImpl.UserServiceImpl : saveUser()arguments : [{"user_id":0,"username":"Rohit1","password":"password","enabled":true,"role":"PATIENT"}]
+2021-03-12 12:00:36,134 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-1] class com.cg.hospital.serviceImpl.UserServiceImpl : saveUser()Response : {"user_id":1,"username":"Rohit1","password":"password","enabled":true,"role":"PATIENT"}
+2021-03-12 12:00:36,137 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-1] Method invoked class com.cg.hospital.serviceImpl.PatientServiceImpl : addPatient()arguments : [{"ssn":2,"address":"Mumbai","insuranceID":101,"name":"Rohit","phone":9087654321,"appointments":null,"prescribes":null,"stays":null,"undergoes":null,"user":{"user_id":1,"username":"Rohit1","password":"password","enabled":true,"role":"PATIENT"}}]
+2021-03-12 12:00:36,159 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [com.cg.hospital.exceptions.InvalidPatientException: Patient Already Exists]
+2021-03-12 12:01:38,738 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-9] Method invoked class com.cg.hospital.serviceImpl.UserServiceImpl : saveUser()arguments : [{"user_id":0,"username":"Rohit","password":"password","enabled":true,"role":"PATIENT"}]
+2021-03-12 12:01:38,759 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-9] SQL Error: 23505, SQLState: 23505
+2021-03-12 12:01:38,760 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-9] Unique index or primary key violation: "PUBLIC.UK_9GXE97J2NGJJVTKIG6B6JVY91_INDEX_F ON PUBLIC.PATIENT(PHONE) VALUES 2"; SQL statement:
+insert into patient (address, insuranceid, name, phone, pcp, user_id, ssn) values (?, ?, ?, ?, ?, ?, ?) [23505-200]
+2021-03-12 12:01:38,773 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-9] Resolved [org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_9GXE97J2NGJJVTKIG6B6JVY91_INDEX_F ON PUBLIC.PATIENT(PHONE) VALUES 2"; SQL statement:
+insert into patient (address, insuranceid, name, phone, pcp, user_id, ssn) values (?, ?, ?, ?, ?, ?, ?) [23505-200]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2021-03-12 12:02:01,748 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-10] Method invoked class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()arguments : [1]
+2021-03-12 12:02:01,759 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-10] class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()Response : {"present":true}
+2021-03-12 12:02:01,760 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-10] Method invoked class com.cg.hospital.serviceImpl.PatientServiceImpl : getPatientBySsn()arguments : [1]
+2021-03-12 12:02:01,783 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-10] class com.cg.hospital.serviceImpl.PatientServiceImpl : getPatientBySsn()Response : {"ssn":2,"address":"Mumbai","insuranceID":101,"name":"Rohit","phone":9087654321,"appointments":[],"prescribes":[],"stays":[],"undergoes":[],"user":{"user_id":1,"username":"Rohit1","password":"password","enabled":true,"role":"PATIENT"}}
+2021-03-12 12:02:16,084 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-2] Method invoked class com.cg.hospital.serviceImpl.PatientServiceImpl : getAllPatients()arguments : []
+2021-03-12 12:02:16,121 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-2] class com.cg.hospital.serviceImpl.PatientServiceImpl : getAllPatients()Response : [{"ssn":2,"address":"Mumbai","insuranceID":101,"name":"Rohit","phone":9087654321,"appointments":[],"prescribes":[],"stays":[],"undergoes":[],"user":{"user_id":1,"username":"Rohit1","password":"password","enabled":true,"role":"PATIENT"}}]
+2021-03-12 12:02:28,077 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-4] Method invoked class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()arguments : [1]
+2021-03-12 12:02:28,081 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-4] class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()Response : {"present":true}
+2021-03-12 12:02:28,083 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-4] Method invoked class com.cg.hospital.serviceImpl.PatientServiceImpl : removePatient()arguments : [2]
+2021-03-12 12:02:28,113 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-4] class com.cg.hospital.serviceImpl.PatientServiceImpl : removePatient()Response : "Patient's record deleted successfully"
+2021-03-12 12:03:17,256 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-9] Method invoked class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()arguments : [1]
+2021-03-12 12:03:17,260 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-9] class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()Response : {"present":true}
+2021-03-12 12:03:17,262 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-9] Method invoked class com.cg.hospital.serviceImpl.PatientServiceImpl : removePatient()arguments : [2]
+2021-03-12 12:03:17,267 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-9] class com.cg.hospital.serviceImpl.PatientServiceImpl : removePatient()Response : "Patient's record deleted successfully"
+2021-03-12 12:03:19,030 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-10] Method invoked class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()arguments : [1]
+2021-03-12 12:03:19,034 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-10] class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()Response : {"present":true}
+2021-03-12 12:03:19,035 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-10] Method invoked class com.cg.hospital.serviceImpl.PatientServiceImpl : removePatient()arguments : [2]
+2021-03-12 12:03:19,037 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-10] class com.cg.hospital.serviceImpl.PatientServiceImpl : removePatient()Response : "Patient's record deleted successfully"
+2021-03-12 12:05:03,431 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-6] Method invoked class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()arguments : [2]
+2021-03-12 12:05:03,434 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-6] class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()Response : {"present":false}
+2021-03-12 12:05:03,439 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-6] Resolved [java.util.NoSuchElementException: No value present]
+2021-03-12 12:05:13,070 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-7] Method invoked class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()arguments : [1]
+2021-03-12 12:05:13,075 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-7] class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()Response : {"present":true}
+2021-03-12 12:05:13,076 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-7] Method invoked class com.cg.hospital.serviceImpl.PatientServiceImpl : removePatient()arguments : [2]
+2021-03-12 12:05:13,079 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-7] class com.cg.hospital.serviceImpl.PatientServiceImpl : removePatient()Response : "Patient's record deleted successfully"
+2021-03-12 12:07:45,493 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-03-12 12:07:45,573 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting HospitalManagementApplication using Java 1.8.0_221 on LIN51004636 with PID 11816 (C:\project data\hospital mgmt\HospitalManagement\target\classes started by vpatil39 in C:\project data\hospital mgmt\HospitalManagement)
+2021-03-12 12:07:45,576 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 12:07:45,813 INFO org.springframework.boot.logging.DeferredLog [restartedMain] The Class-Path manifest attribute in C:\Users\vpatil39\.m2\repository\com\oracle\database\jdbc\ojdbc8\19.8.0.0\ojdbc8-19.8.0.0.jar referenced one or more files that do not exist: file:/C:/Users/vpatil39/.m2/repository/com/oracle/database/jdbc/ojdbc8/19.8.0.0/oraclepki.jar
+2021-03-12 12:07:45,814 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-12 12:07:45,815 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-12 12:07:59,331 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-12 12:07:59,632 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 282 ms. Found 8 JPA repository interfaces.
+2021-03-12 12:08:03,047 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-12 12:08:03,078 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-12 12:08:03,083 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 12:08:03,087 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 12:08:03,549 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 12:08:03,549 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 17732 ms
+2021-03-12 12:08:03,918 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-03-12 12:08:04,339 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-03-12 12:08:04,353 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-12 12:08:04,867 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-12 12:08:05,099 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-12 12:08:05,614 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-12 12:08:06,046 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-12 12:08:09,004 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-12 12:08:09,307 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 12:08:09,371 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 12:08:12,084 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-12 12:08:13,275 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 12:08:14,599 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-12 12:08:14,782 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-12 12:08:18,591 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started HospitalManagementApplication in 34.453 seconds (JVM running for 37.276)
+2021-03-12 12:08:51,368 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-12 12:08:51,369 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-03-12 12:08:51,372 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2021-03-12 12:10:00,410 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-6] Method invoked class com.cg.hospital.serviceImpl.UserServiceImpl : saveUser()arguments : [{"user_id":0,"username":"Rohit","password":"password","enabled":true,"role":"PATIENT"}]
+2021-03-12 12:10:00,875 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-6] class com.cg.hospital.serviceImpl.UserServiceImpl : saveUser()Response : {"user_id":1,"username":"Rohit","password":"password","enabled":true,"role":"PATIENT"}
+2021-03-12 12:10:00,880 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-6] Method invoked class com.cg.hospital.serviceImpl.PatientServiceImpl : addPatient()arguments : [{"ssn":2,"address":"Mumbai","insuranceID":101,"name":"Rohit","phone":9087654321,"appointments":null,"prescribes":null,"stays":null,"undergoes":null,"user":{"user_id":1,"username":"Rohit","password":"password","enabled":true,"role":"PATIENT"}}]
+2021-03-12 12:10:01,002 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-6] Resolved [com.cg.hospital.exceptions.InvalidPatientException: Patient Already Exists]
+2021-03-12 12:10:32,898 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-10] Method invoked class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()arguments : [1]
+2021-03-12 12:10:32,977 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-10] class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()Response : {"present":true}
+2021-03-12 12:10:32,982 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-10] Method invoked class com.cg.hospital.serviceImpl.PatientServiceImpl : removePatient()arguments : [2]
+2021-03-12 12:10:33,046 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-10] class com.cg.hospital.serviceImpl.PatientServiceImpl : removePatient()Response : "Patient's record deleted successfully"
+2021-03-12 12:15:22,718 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-6] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 12:15:22,738 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-6] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 12:15:22,968 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-6] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-03-12 12:15:22,969 INFO com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown initiated...
+2021-03-12 12:15:22,974 INFO com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown completed.
+2021-03-12 12:15:24,212 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting HospitalManagementApplication using Java 1.8.0_221 on LIN51004636 with PID 11816 (C:\project data\hospital mgmt\HospitalManagement\target\classes started by vpatil39 in C:\project data\hospital mgmt\HospitalManagement)
+2021-03-12 12:15:24,213 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 12:15:28,270 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-12 12:15:28,676 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 404 ms. Found 8 JPA repository interfaces.
+2021-03-12 12:15:30,293 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-12 12:15:30,296 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-12 12:15:30,297 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 12:15:30,299 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 12:15:30,938 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 12:15:30,939 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 6646 ms
+2021-03-12 12:15:30,986 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2021-03-12 12:15:30,993 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2021-03-12 12:15:30,994 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-12 12:15:31,200 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-12 12:15:31,228 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-12 12:15:32,264 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-12 12:15:32,290 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 12:15:32,300 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 12:15:33,044 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-12 12:15:33,244 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 12:15:33,631 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-12 12:15:33,653 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-12 12:15:35,854 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started HospitalManagementApplication in 12.329 seconds (JVM running for 474.539)
+2021-03-12 12:15:35,861 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-12 12:30:43,685 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-10] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 12:30:43,690 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-10] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 12:30:43,903 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-10] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-03-12 12:30:43,904 INFO com.zaxxer.hikari.HikariDataSource [Thread-10] HikariPool-2 - Shutdown initiated...
+2021-03-12 12:30:43,911 INFO com.zaxxer.hikari.HikariDataSource [Thread-10] HikariPool-2 - Shutdown completed.
+2021-03-12 12:30:44,750 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting HospitalManagementApplication using Java 1.8.0_221 on LIN51004636 with PID 11816 (C:\project data\hospital mgmt\HospitalManagement\target\classes started by vpatil39 in C:\project data\hospital mgmt\HospitalManagement)
+2021-03-12 12:30:44,758 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 12:30:47,671 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-12 12:30:48,247 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 566 ms. Found 8 JPA repository interfaces.
+2021-03-12 12:30:50,783 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-12 12:30:50,785 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-12 12:30:50,787 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 12:30:50,789 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 12:30:51,567 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 12:30:51,568 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 6796 ms
+2021-03-12 12:30:51,603 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2021-03-12 12:30:51,609 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2021-03-12 12:30:51,610 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-12 12:30:52,048 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-12 12:30:52,081 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-12 12:30:53,743 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-12 12:30:53,893 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 12:30:53,915 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 12:30:55,305 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-12 12:30:55,639 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 12:30:56,637 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-12 12:30:56,670 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-12 12:30:59,515 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started HospitalManagementApplication in 15.21 seconds (JVM running for 1398.174)
+2021-03-12 12:30:59,519 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-12 12:32:50,401 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-10] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-12 12:32:50,403 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-10] Initializing Servlet 'dispatcherServlet'
+2021-03-12 12:32:50,404 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-10] Completed initialization in 1 ms
+2021-03-12 12:40:26,783 WARN org.springframework.core.log.CompositeLog [http-nio-8080-exec-3] Failed to evaluate Jackson deserialization for type [[simple type, class com.cg.hospital.bean.Physician]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot handle managed/back reference 'physician': no back reference property found from type [simple type, class com.cg.hospital.bean.User]
+2021-03-12 12:40:26,811 WARN org.springframework.core.log.CompositeLog [http-nio-8080-exec-3] Failed to evaluate Jackson deserialization for type [[simple type, class com.cg.hospital.bean.Physician]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot handle managed/back reference 'physician': no back reference property found from type [simple type, class com.cg.hospital.bean.User]
+2021-03-12 12:40:26,819 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-3] Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/json;charset=UTF-8' not supported]
+2021-03-12 12:41:44,222 WARN org.springframework.core.log.CompositeLog [http-nio-8080-exec-4] Failed to evaluate Jackson deserialization for type [[simple type, class com.cg.hospital.bean.Physician]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot handle managed/back reference 'physician': no back reference property found from type [simple type, class com.cg.hospital.bean.User]
+2021-03-12 12:41:44,228 WARN org.springframework.core.log.CompositeLog [http-nio-8080-exec-4] Failed to evaluate Jackson deserialization for type [[simple type, class com.cg.hospital.bean.Physician]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot handle managed/back reference 'physician': no back reference property found from type [simple type, class com.cg.hospital.bean.User]
+2021-03-12 12:41:44,231 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-4] Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/json;charset=UTF-8' not supported]
+2021-03-12 12:48:04,028 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-03-12 12:48:04,088 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting HospitalManagementApplication using Java 1.8.0_221 on LIN51004636 with PID 3176 (C:\project data\hospital mgmt\HospitalManagement\target\classes started by vpatil39 in C:\project data\hospital mgmt\HospitalManagement)
+2021-03-12 12:48:04,091 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 12:48:04,279 INFO org.springframework.boot.logging.DeferredLog [restartedMain] The Class-Path manifest attribute in C:\Users\vpatil39\.m2\repository\com\oracle\database\jdbc\ojdbc8\19.8.0.0\ojdbc8-19.8.0.0.jar referenced one or more files that do not exist: file:/C:/Users/vpatil39/.m2/repository/com/oracle/database/jdbc/ojdbc8/19.8.0.0/oraclepki.jar
+2021-03-12 12:48:04,280 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-12 12:48:04,281 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-12 12:48:07,884 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-12 12:48:08,217 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 308 ms. Found 8 JPA repository interfaces.
+2021-03-12 12:48:11,321 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-12 12:48:11,342 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-12 12:48:11,343 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 12:48:11,344 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 12:48:11,673 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 12:48:11,674 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 7391 ms
+2021-03-12 12:48:11,986 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-03-12 12:48:12,390 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-03-12 12:48:12,407 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-12 12:48:12,827 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-12 12:48:12,952 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-12 12:48:13,345 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-12 12:48:13,669 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-12 12:48:16,032 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-12 12:48:16,289 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 12:48:16,339 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 12:48:18,103 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-12 12:48:18,697 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 12:48:19,438 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-12 12:48:19,511 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-12 12:48:21,536 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started HospitalManagementApplication in 18.623 seconds (JVM running for 21.202)
+2021-03-12 12:49:02,121 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-12 12:49:02,122 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-03-12 12:49:02,124 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2021-03-12 12:49:02,292 WARN org.springframework.core.log.CompositeLog [http-nio-8080-exec-1] Failed to evaluate Jackson deserialization for type [[simple type, class com.cg.hospital.bean.Physician]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot handle managed/back reference 'physician': no back reference property found from type [simple type, class com.cg.hospital.bean.User]
+2021-03-12 12:49:02,326 WARN org.springframework.core.log.CompositeLog [http-nio-8080-exec-1] Failed to evaluate Jackson deserialization for type [[simple type, class com.cg.hospital.bean.Physician]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot handle managed/back reference 'physician': no back reference property found from type [simple type, class com.cg.hospital.bean.User]
+2021-03-12 12:49:02,346 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/json;charset=UTF-8' not supported]
+2021-03-12 14:21:33,380 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-03-12 14:21:33,497 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting HospitalManagementApplication using Java 1.8.0_221 on LIN51004636 with PID 15968 (C:\project data\hospital mgmt\HospitalManagement\target\classes started by vpatil39 in C:\project data\hospital mgmt\HospitalManagement)
+2021-03-12 14:21:33,499 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 14:21:33,821 INFO org.springframework.boot.logging.DeferredLog [restartedMain] The Class-Path manifest attribute in C:\Users\vpatil39\.m2\repository\com\oracle\database\jdbc\ojdbc8\19.8.0.0\ojdbc8-19.8.0.0.jar referenced one or more files that do not exist: file:/C:/Users/vpatil39/.m2/repository/com/oracle/database/jdbc/ojdbc8/19.8.0.0/oraclepki.jar
+2021-03-12 14:21:33,823 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-12 14:21:33,823 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-12 14:21:37,286 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-12 14:21:37,548 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 243 ms. Found 8 JPA repository interfaces.
+2021-03-12 14:21:40,902 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-12 14:21:40,934 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-12 14:21:40,936 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 14:21:40,937 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 14:21:41,577 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 14:21:41,578 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 7753 ms
+2021-03-12 14:21:42,040 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-03-12 14:21:43,000 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-03-12 14:21:43,020 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-12 14:21:44,107 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-12 14:21:44,773 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-12 14:21:46,913 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-12 14:21:47,745 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-12 14:21:50,746 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-12 14:21:51,308 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 14:21:51,365 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 14:21:53,691 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-12 14:21:54,886 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 14:21:57,023 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-12 14:21:57,239 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-12 14:22:00,886 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started HospitalManagementApplication in 29.165 seconds (JVM running for 32.538)
+2021-03-12 14:22:58,590 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-12 14:22:58,591 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-03-12 14:22:58,600 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 8 ms
+2021-03-12 14:23:34,058 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-3] Method invoked class com.cg.hospital.serviceImpl.PhysicianServiceImpl : getAllPhysicians()arguments : []
+2021-03-12 14:23:34,291 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-3] Resolved [com.cg.hospital.exceptions.PhysicianNotFoundException: No Physicians present in the database]
+2021-03-12 14:29:43,812 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-1] Method invoked class com.cg.hospital.serviceImpl.PhysicianServiceImpl : findByPhysicianId()arguments : [1]
+2021-03-12 14:29:43,854 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [com.cg.hospital.exceptions.PhysicianNotFoundException: Physician not found for EmployeeID: 1]
+2021-03-12 14:30:02,373 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-7] Method invoked class com.cg.hospital.serviceImpl.PhysicianServiceImpl : getAllPhysicians()arguments : []
+2021-03-12 14:30:02,379 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-7] Resolved [com.cg.hospital.exceptions.PhysicianNotFoundException: No Physicians present in the database]
+2021-03-12 14:34:23,772 WARN org.springframework.core.log.CompositeLog [http-nio-8080-exec-5] Failed to evaluate Jackson deserialization for type [[simple type, class com.cg.hospital.bean.Patient]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot handle managed/back reference 'physician': no back reference property found from type [simple type, class com.cg.hospital.bean.User]
+2021-03-12 14:34:23,830 WARN org.springframework.core.log.CompositeLog [http-nio-8080-exec-5] Failed to evaluate Jackson deserialization for type [[simple type, class com.cg.hospital.bean.Patient]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot handle managed/back reference 'physician': no back reference property found from type [simple type, class com.cg.hospital.bean.User]
+2021-03-12 14:34:23,836 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-5] Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/json;charset=UTF-8' not supported]
+2021-03-12 14:34:43,080 WARN org.springframework.core.log.CompositeLog [http-nio-8080-exec-2] Failed to evaluate Jackson deserialization for type [[simple type, class com.cg.hospital.bean.Patient]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot handle managed/back reference 'physician': no back reference property found from type [simple type, class com.cg.hospital.bean.User]
+2021-03-12 14:34:43,086 WARN org.springframework.core.log.CompositeLog [http-nio-8080-exec-2] Failed to evaluate Jackson deserialization for type [[simple type, class com.cg.hospital.bean.Patient]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot handle managed/back reference 'physician': no back reference property found from type [simple type, class com.cg.hospital.bean.User]
+2021-03-12 14:34:43,087 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/json;charset=UTF-8' not supported]
+2021-03-12 14:35:22,588 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-6] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 14:35:22,614 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-6] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 14:35:22,840 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-6] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-03-12 14:35:22,848 INFO com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown initiated...
+2021-03-12 14:35:22,872 INFO com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown completed.
+2021-03-12 14:35:23,677 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting HospitalManagementApplication using Java 1.8.0_221 on LIN51004636 with PID 15968 (C:\project data\hospital mgmt\HospitalManagement\target\classes started by vpatil39 in C:\project data\hospital mgmt\HospitalManagement)
+2021-03-12 14:35:23,680 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 14:35:26,052 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-12 14:35:26,443 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 388 ms. Found 8 JPA repository interfaces.
+2021-03-12 14:35:28,484 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-12 14:35:28,492 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-12 14:35:28,494 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 14:35:28,495 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 14:35:29,353 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 14:35:29,354 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 5666 ms
+2021-03-12 14:35:29,409 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2021-03-12 14:35:29,414 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2021-03-12 14:35:29,421 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-12 14:35:29,692 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-12 14:35:29,725 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-12 14:35:30,829 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-12 14:35:30,861 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 14:35:30,874 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 14:35:31,647 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-12 14:35:31,894 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 14:35:32,247 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-12 14:35:32,264 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-12 14:35:34,282 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started HospitalManagementApplication in 10.794 seconds (JVM running for 845.916)
+2021-03-12 14:35:34,291 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-12 14:35:54,671 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-10] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-12 14:35:54,673 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-10] Initializing Servlet 'dispatcherServlet'
+2021-03-12 14:35:54,676 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-10] Completed initialization in 2 ms
+2021-03-12 14:35:54,902 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-10] Method invoked class com.cg.hospital.serviceImpl.UserServiceImpl : saveUser()arguments : [{"user_id":0,"username":"Rohit","password":"password","enabled":true,"role":"PATIENT"}]
+2021-03-12 14:35:55,113 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-10] class com.cg.hospital.serviceImpl.UserServiceImpl : saveUser()Response : {"user_id":1,"username":"Rohit","password":"password","enabled":true,"role":"PATIENT"}
+2021-03-12 14:35:55,116 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-10] Method invoked class com.cg.hospital.serviceImpl.PatientServiceImpl : addPatient()arguments : [{"ssn":2,"address":"Mumbai","insuranceID":101,"name":"Rohit","phone":9087654321,"appointments":null,"prescribes":null,"stays":null,"undergoes":null,"user":{"user_id":1,"username":"Rohit","password":"password","enabled":true,"role":"PATIENT"}}]
+2021-03-12 14:35:55,140 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-10] Resolved [com.cg.hospital.exceptions.InvalidPatientException: Patient Already Exists]
+2021-03-12 14:40:49,929 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-1] Method invoked class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()arguments : [1]
+2021-03-12 14:40:50,060 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-1] class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()Response : {"present":true}
+2021-03-12 14:40:50,069 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-1] Method invoked class com.cg.hospital.serviceImpl.PatientServiceImpl : updatePatient()arguments : [2,{"ssn":0,"address":"Mumbai","insuranceID":123,"name":"Rohit","phone":9087654321,"appointments":null,"prescribes":null,"stays":null,"undergoes":null,"user":null}]
+2021-03-12 14:40:50,083 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [java.util.NoSuchElementException: No value present]
+2021-03-12 14:40:50,986 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-9] Method invoked class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()arguments : [1]
+2021-03-12 14:40:50,999 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-9] class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()Response : {"present":true}
+2021-03-12 14:40:51,004 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-9] Method invoked class com.cg.hospital.serviceImpl.PatientServiceImpl : updatePatient()arguments : [2,{"ssn":0,"address":"Mumbai","insuranceID":123,"name":"Rohit","phone":9087654321,"appointments":null,"prescribes":null,"stays":null,"undergoes":null,"user":null}]
+2021-03-12 14:40:51,034 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-9] Resolved [java.util.NoSuchElementException: No value present]
+2021-03-12 14:41:28,192 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-4] Method invoked class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()arguments : [1]
+2021-03-12 14:41:28,199 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-4] class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()Response : {"present":true}
+2021-03-12 14:41:28,202 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-4] Method invoked class com.cg.hospital.serviceImpl.PatientServiceImpl : updatePatient()arguments : [2,{"ssn":2,"address":"Mumbai","insuranceID":123,"name":"Rohit","phone":9087654321,"appointments":null,"prescribes":null,"stays":null,"undergoes":null,"user":null}]
+2021-03-12 14:41:28,475 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] SQL Error: 23502, SQLState: 23502
+2021-03-12 14:41:28,476 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] NULL not allowed for column "USER_ID"; SQL statement:
+update patient set address=?, insuranceid=?, name=?, phone=?, pcp=?, user_id=? where ssn=? [23502-200]
+2021-03-12 14:41:28,538 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-4] Resolved [com.cg.hospital.exceptions.InvalidPatientException: Something went wrong: could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2021-03-12 14:43:05,461 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-7] Method invoked class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()arguments : [1]
+2021-03-12 14:43:05,466 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-7] class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()Response : {"present":true}
+2021-03-12 14:43:05,469 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-7] Method invoked class com.cg.hospital.serviceImpl.PatientServiceImpl : updatePatient()arguments : [2,{"ssn":0,"address":"Mumbai","insuranceID":123,"name":"Rohit","phone":9087654321,"appointments":null,"prescribes":null,"stays":null,"undergoes":null,"user":null}]
+2021-03-12 14:43:05,480 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-7] Resolved [java.util.NoSuchElementException: No value present]
+2021-03-12 14:44:54,223 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-10] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 14:44:54,232 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-10] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 14:44:54,446 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-10] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-03-12 14:44:54,448 INFO com.zaxxer.hikari.HikariDataSource [Thread-10] HikariPool-2 - Shutdown initiated...
+2021-03-12 14:44:54,453 INFO com.zaxxer.hikari.HikariDataSource [Thread-10] HikariPool-2 - Shutdown completed.
+2021-03-12 14:44:55,344 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting HospitalManagementApplication using Java 1.8.0_221 on LIN51004636 with PID 15968 (C:\project data\hospital mgmt\HospitalManagement\target\classes started by vpatil39 in C:\project data\hospital mgmt\HospitalManagement)
+2021-03-12 14:44:55,345 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 14:44:58,898 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-12 14:44:59,566 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 667 ms. Found 8 JPA repository interfaces.
+2021-03-12 14:45:02,644 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-12 14:45:02,646 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-12 14:45:02,647 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 14:45:02,648 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 14:45:04,701 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 14:45:04,702 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 9317 ms
+2021-03-12 14:45:04,775 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2021-03-12 14:45:04,809 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2021-03-12 14:45:04,810 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-12 14:45:09,154 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-12 14:45:09,197 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-12 14:45:11,445 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-12 14:45:11,480 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 14:45:11,505 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 14:45:13,331 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-12 14:45:13,880 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 14:45:14,785 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-12 14:45:14,811 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-12 14:45:17,810 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started HospitalManagementApplication in 22.718 seconds (JVM running for 1429.453)
+2021-03-12 14:45:17,813 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-12 14:46:23,703 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-12 14:46:23,706 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-03-12 14:46:23,708 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-03-12 14:46:24,008 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-1] Method invoked class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()arguments : [1]
+2021-03-12 14:46:24,099 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-1] class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()Response : {"present":false}
+2021-03-12 14:46:24,116 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [java.util.NoSuchElementException: No value present]
+2021-03-12 14:48:44,018 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-15] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 14:48:44,028 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-15] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 14:48:44,247 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-15] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-03-12 14:48:44,248 INFO com.zaxxer.hikari.HikariDataSource [Thread-15] HikariPool-3 - Shutdown initiated...
+2021-03-12 14:48:44,252 INFO com.zaxxer.hikari.HikariDataSource [Thread-15] HikariPool-3 - Shutdown completed.
+2021-03-12 14:48:44,906 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting HospitalManagementApplication using Java 1.8.0_221 on LIN51004636 with PID 15968 (C:\project data\hospital mgmt\HospitalManagement\target\classes started by vpatil39 in C:\project data\hospital mgmt\HospitalManagement)
+2021-03-12 14:48:44,908 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 14:48:46,130 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-12 14:48:46,268 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 137 ms. Found 8 JPA repository interfaces.
+2021-03-12 14:48:47,420 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-12 14:48:47,429 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-12 14:48:47,430 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 14:48:47,430 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 14:48:47,986 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 14:48:48,022 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3106 ms
+2021-03-12 14:48:48,071 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Starting...
+2021-03-12 14:48:48,076 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Start completed.
+2021-03-12 14:48:48,077 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-12 14:48:48,230 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-12 14:48:48,276 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-12 14:48:49,700 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-12 14:48:49,725 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 14:48:49,759 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 14:48:50,647 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-12 14:48:50,877 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 14:48:51,117 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-12 14:48:51,130 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-12 14:48:51,946 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started HospitalManagementApplication in 7.18 seconds (JVM running for 1643.589)
+2021-03-12 14:48:51,949 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-12 14:51:47,144 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-20] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 14:51:47,150 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-20] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 14:51:47,356 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-20] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-03-12 14:51:47,357 INFO com.zaxxer.hikari.HikariDataSource [Thread-20] HikariPool-4 - Shutdown initiated...
+2021-03-12 14:51:47,364 INFO com.zaxxer.hikari.HikariDataSource [Thread-20] HikariPool-4 - Shutdown completed.
+2021-03-12 14:51:47,883 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting HospitalManagementApplication using Java 1.8.0_221 on LIN51004636 with PID 15968 (C:\project data\hospital mgmt\HospitalManagement\target\classes started by vpatil39 in C:\project data\hospital mgmt\HospitalManagement)
+2021-03-12 14:51:47,884 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 14:51:48,990 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-12 14:51:49,112 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 121 ms. Found 8 JPA repository interfaces.
+2021-03-12 14:51:50,299 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-12 14:51:50,301 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-12 14:51:50,302 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 14:51:50,303 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 14:51:50,855 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 14:51:50,855 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2964 ms
+2021-03-12 14:51:50,891 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-5 - Starting...
+2021-03-12 14:51:50,897 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-5 - Start completed.
+2021-03-12 14:51:50,899 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-12 14:51:51,091 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-12 14:51:51,127 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-12 14:51:51,811 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-12 14:51:51,830 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 14:51:51,839 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 14:51:52,460 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-12 14:51:52,638 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 14:51:52,842 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-12 14:51:52,860 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-12 14:51:53,571 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started HospitalManagementApplication in 5.8 seconds (JVM running for 1825.214)
+2021-03-12 14:51:53,574 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-12 14:52:33,718 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-12 14:52:33,720 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-03-12 14:52:33,727 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 3 ms
+2021-03-12 14:52:59,623 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-6] Method invoked class com.cg.hospital.serviceImpl.UserServiceImpl : saveUser()arguments : [{"user_id":0,"username":"Rohit","password":"password","enabled":true,"role":"PATIENT"}]
+2021-03-12 14:52:59,691 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-6] class com.cg.hospital.serviceImpl.UserServiceImpl : saveUser()Response : {"user_id":1,"username":"Rohit","password":"password","enabled":true,"role":"PATIENT"}
+2021-03-12 14:52:59,694 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-6] Method invoked class com.cg.hospital.serviceImpl.PatientServiceImpl : addPatient()arguments : [{"ssn":2,"address":"Mumbai","insuranceID":101,"name":"Rohit","phone":9087654321,"appointments":null,"prescribes":null,"stays":null,"undergoes":null,"user":{"user_id":1,"username":"Rohit","password":"password","enabled":true,"role":"PATIENT"}}]
+2021-03-12 14:52:59,713 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-6] Resolved [com.cg.hospital.exceptions.InvalidPatientException: Patient Already Exists]
+2021-03-12 14:54:35,192 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-7] Method invoked class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()arguments : [1]
+2021-03-12 14:54:35,201 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-7] class com.cg.hospital.serviceImpl.UserServiceImpl : findUserById()Response : {"present":true}
+2021-03-12 14:54:35,236 INFO com.cg.hospital.aspect.LoggingAspect [http-nio-8080-exec-7] Method invoked class com.cg.hospital.serviceImpl.PatientServiceImpl : updatePatient()arguments : [2,{"ssn":0,"address":"Mumbai","insuranceID":101,"name":"Rohit","phone":9087654321,"appointments":null,"prescribes":null,"stays":null,"undergoes":null,"user":null}]
+2021-03-12 14:54:35,296 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-7] SQL Error: 23502, SQLState: 23502
+2021-03-12 14:54:35,296 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-7] NULL not allowed for column "USER_ID"; SQL statement:
+insert into patient (address, insuranceid, name, phone, pcp, user_id, ssn) values (?, ?, ?, ?, ?, ?, ?) [23502-200]
+2021-03-12 14:54:35,305 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-7] Resolved [com.cg.hospital.exceptions.InvalidPatientException: Something went wrong: could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement]
